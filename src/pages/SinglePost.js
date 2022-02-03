@@ -11,11 +11,14 @@ const SinglePost = ({posts, match, edit, deleteTodo}) => {
 
 
     return <div>
+    <div class="text-center border border-indigo-600 ..." >
         <h1>{post?.question}</h1>
         <h2>{post?.answer}</h2>
+    </div>
         <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick={(event) => edit(post)}>Edit</button>
         <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick={(event) => deleteTodo(post)}>Delete</button>
         <Link to="/"><button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" >Go back</button></Link>
+
     </div>
 }
 
